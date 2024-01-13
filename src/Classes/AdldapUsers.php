@@ -439,7 +439,8 @@ class AdldapUsers extends AbstractAdldapQueryable
      */
     public function encodePassword($password)
     {
-        $password = '"'.$password.'"';
+        return $password;
+        /*$password = '"'.$password.'"';
 
         $encoded = '';
 
@@ -450,7 +451,7 @@ class AdldapUsers extends AbstractAdldapQueryable
             }\000";
         }
 
-        return $encoded;
+        return $encoded;*/
     }
 
     /**
