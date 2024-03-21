@@ -23,7 +23,7 @@ class Entry extends AbstractObject
      * @param array               $attributes
      * @param ConnectionInterface $connection
      */
-    public function __construct(array $attributes = [], ConnectionInterface $connection)
+    public function __construct(array $attributes = [], ?ConnectionInterface $connection = null)
     {
         // Set the connection
         $this->connection = $connection;
